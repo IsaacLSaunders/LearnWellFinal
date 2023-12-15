@@ -22,7 +22,6 @@
           </router-link>
         </div>
         <button class="button">Students</button>
-        <button class="button">Notifications</button>
         <router-link class="logoutButton" type="button" v-bind:to="{ name: 'logout' }"
           v-if="$store.state.token != ''">Logout</router-link>
       </nav>
