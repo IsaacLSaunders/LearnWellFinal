@@ -819,70 +819,70 @@ VALUES
 (7, 4, 2, 2, 0, NULL, GETUTCDATE());
 
 -- Populate answers table
-INSERT INTO answers (submitted_assignment_id, question_id, question_type, answer_choice, answer_text, answer_external, isCorrect, last_updated, number_of_edits)
-VALUES
--- Answers for Algebra Homework 1
-(1, 1, 'choice', 1, NULL, NULL, 0, NULL, 0),
-(1, 2, 'text', NULL, 'The solution is x = 4.', NULL, 0, NULL, 0),
+-- INSERT INTO answers (submitted_assignment_id, question_id, question_type, answer_choice, answer_text, answer_external, isCorrect, last_updated, number_of_edits)
+-- VALUES
+-- -- Answers for Algebra Homework 1
+-- (1, 1, 'choice', 1, NULL, NULL, 0, NULL, 0),
+-- (1, 2, 'text', NULL, 'The solution is x = 4.', NULL, 0, NULL, 0),
 
--- Answers for Algebra Homework 1 (second submission)
-(1, 1, 'choice', 2, NULL, NULL, 0, NULL, 0),
-(1, 2, 'text', NULL, 'Another answer for question 2.', NULL, 0, NULL, 0),
+-- -- Answers for Algebra Homework 1 (second submission)
+-- (1, 1, 'choice', 2, NULL, NULL, 0, NULL, 0),
+-- (1, 2, 'text', NULL, 'Another answer for question 2.', NULL, 0, NULL, 0),
 
--- Answers for Algebra Quiz 1
-(2, 3, 'text', NULL, 'The integral is (1/3)x^3 + C.', NULL, 0, NULL, 0),
-(2, 4, 'text', NULL, 'The derivative of sin(x) is cos(x).', NULL, 0, NULL, 0),
+-- -- Answers for Algebra Quiz 1
+-- (2, 3, 'text', NULL, 'The integral is (1/3)x^3 + C.', NULL, 0, NULL, 0),
+-- (2, 4, 'text', NULL, 'The derivative of sin(x) is cos(x).', NULL, 0, NULL, 0),
 
--- Answers for Calculus Homework 1
-(3, 5, 'text', NULL, 'The limit is 1.', NULL, 0, NULL, 0),
-(3, 6, 'text', NULL, 'The integral is (1/3)x^3 + C.', NULL, 0, NULL, 0),
+-- -- Answers for Calculus Homework 1
+-- (3, 5, 'text', NULL, 'The limit is 1.', NULL, 0, NULL, 0),
+-- (3, 6, 'text', NULL, 'The integral is (1/3)x^3 + C.', NULL, 0, NULL, 0),
 
--- Answers for Calculus Quiz 2
-(4, 7, 'text', NULL, 'The solution is y = Ce^(x^2).', NULL, 0, NULL, 0),
-(4, 8, 'text', NULL, 'The derivative of ln(x) is 1/x.', NULL, 0, NULL, 0),
+-- -- Answers for Calculus Quiz 2
+-- (4, 7, 'text', NULL, 'The solution is y = Ce^(x^2).', NULL, 0, NULL, 0),
+-- (4, 8, 'text', NULL, 'The derivative of ln(x) is 1/x.', NULL, 0, NULL, 0),
 
--- Answers for Linear Algebra Homework 1
-(5, 9, 'text', NULL, 'The determinant is ad - bc.', NULL, 0, NULL, 0),
-(5, 10, 'text', NULL, 'The eigenvalues are 4 and 2.', NULL, 0, NULL, 0),
+-- -- Answers for Linear Algebra Homework 1
+-- (5, 9, 'text', NULL, 'The determinant is ad - bc.', NULL, 0, NULL, 0),
+-- (5, 10, 'text', NULL, 'The eigenvalues are 4 and 2.', NULL, 0, NULL, 0),
 
--- Answers for Shakespeare Essay
-(6, 11, 'text', NULL, 'Othello portrays themes of jealousy and manipulation.', NULL, 0, NULL, 0),
-(6, 12, 'text', NULL, 'Hamlet undergoes a complex character transformation.', NULL, 0, NULL, 0),
+-- -- Answers for Shakespeare Essay
+-- (6, 11, 'text', NULL, 'Othello portrays themes of jealousy and manipulation.', NULL, 0, NULL, 0),
+-- (6, 12, 'text', NULL, 'Hamlet undergoes a complex character transformation.', NULL, 0, NULL, 0),
 
--- Answers for Romantic Poetry Essay
-(7, 13, 'text', NULL, 'Wordsworth emphasizes nature''s impact on the human spirit.', NULL, 0, NULL, 0),
-(7, 14, 'text', NULL, 'Romantic poets were influenced by political and social changes.', NULL, 0, NULL, 0);
+-- -- Answers for Romantic Poetry Essay
+-- (7, 13, 'text', NULL, 'Wordsworth emphasizes nature''s impact on the human spirit.', NULL, 0, NULL, 0),
+-- (7, 14, 'text', NULL, 'Romantic poets were influenced by political and social changes.', NULL, 0, NULL, 0);
 
 -- Populate comments table
-INSERT INTO comments (submitted_assignment_id, created_by, comment, created_date, last_updated, number_of_edits)
-VALUES
--- Comments for Algebra Homework 1
-(1, 2, 'Great work on question 2!', GETUTCDATE(), NULL, 0),
-(1, 2, 'You showed excellent problem-solving skills.', GETUTCDATE(), NULL, 0),
+-- INSERT INTO comments (submitted_assignment_id, created_by, comment, created_date, last_updated, number_of_edits)
+-- VALUES
+-- -- Comments for Algebra Homework 1
+-- (1, 2, 'Great work on question 2!', GETUTCDATE(), NULL, 0),
+-- (1, 2, 'You showed excellent problem-solving skills.', GETUTCDATE(), NULL, 0),
 
--- Comments for Algebra Quiz 1
-(2, 2, 'Well done on both questions!', GETUTCDATE(), NULL, 0),
-(2, 2, 'Your understanding of integration is commendable.', GETUTCDATE(), NULL, 0),
+-- -- Comments for Algebra Quiz 1
+-- (2, 2, 'Well done on both questions!', GETUTCDATE(), NULL, 0),
+-- (2, 2, 'Your understanding of integration is commendable.', GETUTCDATE(), NULL, 0),
 
--- Comments for Calculus Homework 1
-(3, 2, 'You demonstrated a clear understanding of limits.', GETUTCDATE(), NULL, 0),
-(3, 2, 'Impressive work on the definite integral!', GETUTCDATE(), NULL, 0),
+-- -- Comments for Calculus Homework 1
+-- (3, 2, 'You demonstrated a clear understanding of limits.', GETUTCDATE(), NULL, 0),
+-- (3, 2, 'Impressive work on the definite integral!', GETUTCDATE(), NULL, 0),
 
--- Comments for Calculus Quiz 2
-(4, 2, 'Your solutions were well-explained.', GETUTCDATE(), NULL, 0),
-(4, 2, 'Good job on the derivative of ln(x) question.', GETUTCDATE(), NULL, 0),
+-- -- Comments for Calculus Quiz 2
+-- (4, 2, 'Your solutions were well-explained.', GETUTCDATE(), NULL, 0),
+-- (4, 2, 'Good job on the derivative of ln(x) question.', GETUTCDATE(), NULL, 0),
 
--- Comments for Linear Algebra Homework 1
-(5, 2, 'Excellent explanation of determinants!', GETUTCDATE(), NULL, 0),
-(5, 2, 'Your understanding of eigenvalues is commendable.', GETUTCDATE(), NULL, 0),
+-- -- Comments for Linear Algebra Homework 1
+-- (5, 2, 'Excellent explanation of determinants!', GETUTCDATE(), NULL, 0),
+-- (5, 2, 'Your understanding of eigenvalues is commendable.', GETUTCDATE(), NULL, 0),
 
--- Comments for Shakespeare Essay
-(6, 2, 'Insightful analysis of themes in "Othello."', GETUTCDATE(), NULL, 0),
-(6, 2, 'Your interpretation of Hamlet''s character is intriguing.', GETUTCDATE(), NULL, 0),
+-- -- Comments for Shakespeare Essay
+-- (6, 2, 'Insightful analysis of themes in "Othello."', GETUTCDATE(), NULL, 0),
+-- (6, 2, 'Your interpretation of Hamlet''s character is intriguing.', GETUTCDATE(), NULL, 0),
 
--- Comments for Romantic Poetry Essay
-(7, 2, 'Well-researched comparison of Wordsworth and Keats.', GETUTCDATE(), NULL, 0),
-(7, 2, 'Your exploration of the historical context is noteworthy.', GETUTCDATE(), NULL, 0);
+-- -- Comments for Romantic Poetry Essay
+-- (7, 2, 'Well-researched comparison of Wordsworth and Keats.', GETUTCDATE(), NULL, 0),
+-- (7, 2, 'Your exploration of the historical context is noteworthy.', GETUTCDATE(), NULL, 0);
 
 -- Insert teacher_keys
 INSERT INTO teacher_keys (teacher_key, username)

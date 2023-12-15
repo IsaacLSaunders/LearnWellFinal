@@ -5,7 +5,7 @@
             {{ assignment.data.title }}
             <br/>
             {{ assignment.data.description }} 
-            <div v-for="question in assignment.questions" v-bind:key="question.questionId">{{ question.prompt }}
+            <div  v-for="question in assignment.questions" v-bind:key="question.questionId">{{ question.prompt }}
                 <p>
                     {{ question.studentAnswer.answerText }}
                 </p>
