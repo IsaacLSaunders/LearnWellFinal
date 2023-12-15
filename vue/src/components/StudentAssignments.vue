@@ -1,11 +1,23 @@
 <template>
     <div class="box">
         <h1 h1 class="title is-3 has-text-centered">Your Submitted Assignments:</h1>
-        <h2 class="box" v-for="assignment in assignments" v-bind:key="assignment.assignmentId">
-            {{ assignment.data.title }}
+        <h2 class="box has-background-link-light" v-for="assignment in assignments" v-bind:key="assignment.assignmentId">
             <br/>
-            {{ assignment.data.description }} 
-            <div  v-for="question in assignment.questions" v-bind:key="question.questionId">{{ question.prompt }}
+            <div class="box has-background-link-light">
+                <strong>
+                    {{ assignment.data.title }}:
+                    <br/>
+                </strong>
+                {{ assignment.data.description }} 
+            </div>
+            <div class="box has-background-link-light" v-for="question in assignment.questions" v-bind:key="question.questionId">
+                <strong>Question:</strong>
+                <br/>
+                <div>
+                    {{ question.prompt }}
+                </div>
+                <br/>
+                <strong>Answer:</strong>
                 <p>
                     {{ question.studentAnswer.answerText }}
                 </p>
